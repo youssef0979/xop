@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Yusuf's Prime Game</title>
+    <link rel="stylesheet" href="xo.css">
+</head>
+<body>
+    <h1>XO PRIME GAME</h1>
+    
+    <!-- زر إعادة التشغيل -->
+    <button id="reset-btn">Restart Game</button>
+
+    <div class="game-board">
+        <!-- اللوحة الكبيرة -->
+        <div class="large-grid">
+            <!-- كل مربع كبير يحتوي على شبكة صغيرة -->
+            <div class="big-box" id="box-0"></div>
+            <div class="big-box" id="box-1"></div>
+            <div class="big-box" id="box-2"></div>
+            <div class="big-box" id="box-3"></div>
+            <div class="big-box" id="box-4"></div>
+            <div class="big-box" id="box-5"></div>
+            <div class="big-box" id="box-6"></div>
+            <div class="big-box" id="box-7"></div>
+            <div class="big-box" id="box-8"></div>
+        </div>
+    </div>
+
+    <!-- تنبيه الفوز -->
+    <div id="win-message" class="hidden">
+        <p id="win-text"></p>
+    </div>
+
+    <!-- نص "by yusuf" -->
+    <footer>
+        <p>Game by <a href="https://www.instagram.com/_the_yusef?igsh=MTlicWhzY2hrZXh3cw%3D%3D" target="_blank">yusuf</a></p>
+    </footer>
+
+    <script src="xo.js"></script>
+</body>
+</html>

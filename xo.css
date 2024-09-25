@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    padding: 10px; /* إضافة حواف للمساحة */
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 24px; /* حجم خط مناسب للشاشة الصغيرة */
+}
+
+#reset-btn {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px; /* حجم خط مناسب */
+    cursor: pointer;
+    width: 100%; /* جعل الزر يأخذ عرض الشاشة بالكامل */
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* جعل اللوحة تأخذ عرض الشاشة بالكامل */
+}
+
+.large-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* تقليل الفراغ بين المربعات */
+}
+
+.big-box {
+    width: 30vw; /* استخدام عرض النسبي */
+    height: 30vw; /* استخدام ارتفاع النسبي */
+    background-color: #f1f1f1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 2px solid #333;
+}
+
+.big-box div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* حجم خط مناسب للمربعات الصغيرة */
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.big-box div:hover {
+    background-color: #e0e0e0;
+}
+
+.winner {
+    font-size: 64px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* تنبيه الفوز */
+#win-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* نص "by yusuf" */
+footer {
+    margin-top: 20px;
+    text-align: center; /* محاذاة النص في المنتصف */
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
